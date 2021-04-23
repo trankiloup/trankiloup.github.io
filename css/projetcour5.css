@@ -1,14 +1,17 @@
-#fond{background:url(../images/ressourcesProjet/background.png);background-size:10px 10px;background-repeat: repeat; height: fit-content; width: 950px;}
+#fond{background:url(../images/ressourcesProjet/background.png);background-size:10px 10px;background-repeat: repeat; height: fit-content; width: 950px;margin:0 auto}
 li {list-style: none;}
-body{background-color: rgb(224, 216, 216);;margin-top: 0px;}
-header>ul>li{width:200px;height:400px;float:left ; margin : 5px; background-color: rgba(255, 255, 255, 0.70);padding:5px; text-align:justify;align-items: center}
+body{background-color: rgb(224, 216, 216);;;}
+header>ul>li{width:200px;height:400px;float:left ; margin : 8px; padding:auto;  background-color: rgba(255, 255, 255, 0.70);padding:5px ; text-align:justify;align-items: center;}
+ul{margin:auto  }
+header li>img{margin:auto;width: 150px;display: block;}
 h4{text-align: center;}
 p{text-align: center;font-style: italic;}
 div>div{line-height: 55px;float:left;font-size: 80px;padding:0px;margin: 0px;color:#bb0909;text-align: left;}
 a,span{color:#bb0909}
+.lien{padding: 10px;}
 
 section{width:955px;height:900px}
-section li{text-align: center;width:200px;;height:200px;float:left ; margin :5px; background-color: rgba(255, 255, 255, 0.70);padding:5px}
+section li{text-align: center;width:200px;;height:200px;float:left ; margin :8px; background-color: rgba(255, 255, 255, 0.70);padding:5px}
 .bod2 {clear:both}
 .bod3 {clear:both}
 footer{text-align: center;color: thistle;width:950px}
