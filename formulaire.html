@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Formulaire</title>
+	<meta name="description" content=" ">
+	<meta name="author" content=" ">
+	<link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+	<form class='contact_form' action=http://www.action-creation.fr/cnam/HTML_CSS/chapitre4/validateForm.php
+		method='post' name='contact_form' target='_blank'>
+		<ul>
+			<li>
+				<h2>Contactez-nous</h2>
+				<span class="champ_obligatoire">*
+					Information obligatoire</span>
+			</li>
+			<li>
+				<label for="l_nom">Nom : </label>
+				<input type="text" name="nom" id="l_nom" placeholder="bob denard" required >
+			</li>
+			<li>
+				<label for="l_email">Email : </label>
+				<input type="email" name="email" id="l_email" placeholder=tonemail@lanoix.fr required >
+				<span class="form_aide">Format adapté :
+					"lenom@ledomaine.com"</span>
+			</li>
+			<li>
+				<label for="l_siteweb">Site Web :</label>
+				<input type="url" name="siteweb" id="l_siteweb" placeholder="wwww.tropbeaulesite.com" required >
+				<span class="form_aide">Format adapté :
+					"http://www.ledomaine.fr"</span>
+			</li>
+			<li >
+				<label for="l_message">
+					<span class="essais">Message :</span></label>
+				<textarea name="message" cols="45" rows="5" id="l_message" required ></textarea >
+			</li>
+			<li>
+				<button class="validationButton" type="submit">Envoyer</button>
+			</li>
+
+		</ul>
+	</form>
+
+	<script src="myscript.js"></script>
+</body>
+
+
+</html>

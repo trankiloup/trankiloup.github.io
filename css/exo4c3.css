@@ -1,0 +1,3 @@
+div{background-image: url(../images/carte_france.jpeg);background-size: auto;}
+.reims{position: relative;top:60px;left:310px;background-image: url(../images/soleil.png);width: 48px;height: 48px;}
+.nantes{position: relative;top:120px;left:120px;width: 48px;height: 48px;background-image: url(../images/soleil.png),url(../images/nuage.png)}
