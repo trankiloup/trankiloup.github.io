@@ -1,7 +1,6 @@
-#fond{background:url(../images/ressourcesProjet/background.png);background-size:10px 10px;background-repeat: repeat; height: fit-content; width: fit-content;}
+#fond{background:url(../images/ressourcesProjet/background.png);background-size:10px 10px;background-repeat: repeat; height: fit-content; width: 950px;}
 li {list-style: none;}
-body{background-color: rgb(224, 216, 216);;}
-.entete{width:945px;height: 50px;}
+body{background-color: rgb(224, 216, 216);;margin-top: 0px;}
 header>ul>li{width:200px;height:400px;float:left ; margin : 5px; background-color: rgba(255, 255, 255, 0.70);padding:5px; text-align:justify;align-items: center}
 h4{text-align: center;}
 p{text-align: center;font-style: italic;}
@@ -12,6 +11,6 @@ section{width:955px;height:900px}
 section li{text-align: center;width:200px;;height:200px;float:left ; margin :5px; background-color: rgba(255, 255, 255, 0.70);padding:5px}
 .bod2 {clear:both}
 .bod3 {clear:both}
-footer{text-align: center;color: thistle;}
+footer{text-align: center;color: thistle;width:950px}
 
 
