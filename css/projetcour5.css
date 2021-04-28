@@ -11,7 +11,7 @@ p{text-align: center;font-style: italic;}
 a,span{color:#bb0909}
 .middle img{position: relative;left:60px}
 .lien{padding: 10px;}
-@media (max-width:500px){
+@media only screen and (max-width:500px){
 .entete{width:200px;}
 #fond{height:5500px;width:500px;margin:0 auto}
 .tronc ul{width:200px;position:relative;left:-230px}
@@ -20,7 +20,7 @@ header img{width:500px;}
 .middle img{position: relative;left:-180px}
 .end img{position: relative;left:-180px;}
 }
-@media (min-width:501px)and (max-width:950px){
+@media only screen and (min-width:501px)and (max-width:950px){
     .entete {width:500px;position:relative;left:-50px;}
     #fond{height:2800px;width:700px}
     .tronc ul{width:500px;position:relative;left:-180px}
