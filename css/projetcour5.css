@@ -1,23 +1,37 @@
-#fond{background:url(../images/ressourcesProjet/background.png);background-size:10px 10px;background-repeat: repeat; height: fit-content; width: 950px;margin:0 auto}
+#fond{background:url(../images/ressourcesProjet/background.png);background-size:10px 10px;background-repeat: repeat; height: fit-content; width:1050px;margin:0 auto}
 li {list-style: none;}
+header>img{width:950px;position: relative;left:60px}
 body{background-color: rgb(224, 216, 216);;;}
-header>ul>li{width:200px;height:400px;float:left ; margin : 8px; padding:auto;  background-color: rgba(255, 255, 255, 0.70);padding:5px ; text-align:justify;align-items: center;}
-ul{margin:auto  }
-header li>img{margin:auto;width: 150px;display: block;}
+header>ul>li{width:220px;height:400px;float:left ; margin : 8px; padding:auto;  background-color: rgba(255, 255, 255, 0.70);padding:5px ; text-align:justify;align-items: center;border-radius: 3%;border:solid 1px}
+ul{margin:0 auto; width:1000px }
+header li>img{margin:0 auto;width: 150px;display: block;}
 h4{text-align: center;}
 p{text-align: center;font-style: italic;}
-div>div{line-height: 55px;float:left;font-size: 80px;padding:0px;margin: 0px;color:#bb0909;text-align: left;}
+.maj{line-height: 55px;float:left;font-size: 80px;padding:0px;margin: 0px;color:#bb0909;text-align: left;}
 a,span{color:#bb0909}
+.middle img{position: relative;left:60px}
 .lien{padding: 10px;}
-@media (max-width:500px){#{width:200px;margin:0 auto}
-.entete li{float:none;}
-section li{float:none}
-header img{width:500px}
+@media (max-width:500px){
+.entete{width:200px;}
+#fond{height:5500px;width:500px;margin:0 auto}
+.tronc ul{width:200px;position:relative;left:-230px}
+header img{width:500px;}
+.end div{width:500px;position: relative;left:50px;}
+.middle img{position: relative;left:-180px}
+.end img{position: relative;left:-180px;}
 }
-section{width:955px;height:900px}
-section li{text-align: center;width:200px;;height:200px;float:left ; margin :8px; background-color: rgba(255, 255, 255, 0.70);padding:5px}
-.bod2 {clear:both}
-.bod3 {clear:both}
-footer{text-align: center;color: thistle;width:950px}
+@media (min-width:501px)and (max-width:950px){
+    .entete {width:500px;position:relative;left:-50px;}
+    #fond{height:2800px;width:700px}
+    .tronc ul{width:500px;position:relative;left:-180px}
+    header img{width:500px;}
+    .end div{width:500px;position: relative;left:140px;}
+    .middle img{position: relative;left:-150px}
+    .end img{position: relative;left:-120px;}
+}
+
+.tronc{width:955px;height:900px}
+.tronc li{text-align: center;width:220px;;height:200px;float:left ; margin :8px; background-color: rgba(255, 255, 255, 0.70);padding:5px;border-radius: 3%;border:solid 1px}
+.end{margin:0 auto;text-align: center;color: thistle;width:950px}
 
 
