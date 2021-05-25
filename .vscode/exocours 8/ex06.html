@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>form</title>
+    <meta name="description" content=" ">
+    <meta name="author" content=" ">
+    <link rel="stylesheet" href="">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <form class="formulaire">
+        <ul>
+            <li><label for="nbr1">Nombre 1:</label><input type="number" name="Nombre 1:" id="nbr1"> </li>
+            <li><label for="nbr2">Nombre 2:</label><input type="number" name="Nombre 2:" id="nbr2"></li>
+            <li>
+                <button type="button" id="">Roulette</button>
+                
+            </li>
+
+        </ul>
+        <p></p>
+    </form>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>jQuery(document).ready(function () {
+            $('button').click(function () {
+                var n1 = Number($("#nbr1").val());
+                var n2 = Number($("#nbr2").val());
+                var res =(n1+Math.random() * (n2-n1));
+                $("p").html("Résultat : " + res)
+
+            })
+
+
+
+        })
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

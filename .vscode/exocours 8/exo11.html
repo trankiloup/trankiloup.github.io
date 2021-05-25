@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>roulette image</title>
+    <meta name="description" content=" ">
+    <meta name="author" content=" ">
+    <link rel="stylesheet" href="">
+    <style>
+        .perdu {
+            color: red;
+            font-size: x-large;
+        }
+        img{border-radius: 10%;border: red solid 3px;margin:10px}
+        p{width: 1000px;height:300px;margin:0px auto}
+        .cagnotte{font-size: x-large;border:solid 1px red ;border-radius: 10%;height:90px;width:250px;margin:3px auto;padding: auto;}
+        form,button{width:100px;height:50px;background-color: gold;border-radius: 10%;margin:0px auto;position: relative;}
+    </style>
+</head>
+
+<body>
+    
+    
+    
+    <p></p>
+    
+        <form>
+    
+            <button type="button" id="">Roulette</button>
+        </form>
+        <p class="cagnotte"></p>
+        <div></div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>jQuery(document).ready(function () {
+            var thune = 10;
+            $('button').click(function () {
+                var res = 1 + Math.floor(Math.random() * 3);
+                var res1 = 1 + Math.floor(Math.random() * 3);
+                var res2 = 1 + Math.floor(Math.random() * 3);
+                thune = thune - 1
+                $("p").html("<img src=../../images/" + res + ".jpeg>" + "<img src=../../images/" + res1 + ".jpeg>" + "<img src=../../images/" + res2 + ".jpeg>")
+                if (res == res1 && res == res2 && res1 == res2) { $("div").html("BRAVO").addClass('perdu'), setTimeout(function () { $("div").html("") }, 1000), thune = thune + 5 }
+                $(".cagnotte").html("cagnotte d'oseilles: " + thune +" TH")
+                if (thune == 0) { $(".cagnotte").html("PERDU").addClass("perdu") }
+            })
+
+
+
+        })
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

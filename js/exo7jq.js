@@ -1,5 +1,5 @@
 jQuery(document).ready(function(){
-    $("p").click(function(){ $("p").addClass("grand")
+    $("p").click(function(){ $("p").toggleClass("grand")
 });
 
 })

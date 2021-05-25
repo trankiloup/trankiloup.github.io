@@ -1,0 +1,46 @@
+
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JCVD is back</title>
+    <meta name="description" content=" ">
+    <meta name="author" content=" ">
+    <link rel="stylesheet" href="">
+    <style>
+        a>img {float: left;
+            width: 100px;
+            height: 50px;
+            border:solid 1px; margin: 10px;
+        }
+        .grand{width: 500px; height:500px}
+
+    </style>
+</head>
+
+<body>
+    <p>
+    <a><img src="../../images/Moi.jpg"/></a>
+    <a><img src='../../images/ampoules.jpeg'/></a>
+    <a><img src='../../images/work.png'/></a>
+    <a><img src='../../images/medit.jpeg'/></a>
+    <a><img src='../../images/passion.jpeg'/></a>
+    </p>
+<p class="grand"></p>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script>jQuery(document).ready(function () {
+                $("img").click(function () { var lien =$(this).attr('src');
+                
+                $('.grand').html("<img src=" + lien +">")})
+                
+
+            })
+
+
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+	<meta charset="UTF-8">
+	<title>pointcible</title>
+	<style>
+	img{border:3px solid #ffffff;margin:1px 3px;}
+    .bordure{border:3px solid #ff0000}
+	</style>
+</head>
+<body>
+	<img src='./image0.jpeg'>
+    <img src='./image0.jpeg'>
+    <img src='./image0.jpeg'>
+    <img src='./image0.jpeg'>
+    <img src='./image0.jpeg'>
+    <img src='./image0.jpeg'>
+    <img src='./image0.jpeg'>
+    <img src='./image0.jpeg'>
+    <img src='./image0.jpeg'>
+    <img src='./image0.jpeg'>
+    <img src='./image0.jpeg'>
+    <img src='./image0.jpeg'>
+    <img src='./image0.jpeg'>
+    <img src='./image0.jpeg'>
+
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("img").click(function(){
+            $("img").removeClass('bordure');
+            $(this).addClass("bordure");
+		});
+	});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>form</title>
+    <meta name="description" content=" ">
+    <meta name="author" content=" ">
+    <link rel="stylesheet" href="">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <form class="formulaire">
+        <ul>
+            <li><label for="nbr1">Nombre 1:</label><input type="number" name="Nombre 1:" id="nbr1"> </li>
+            <li><label for="nbr2">Nombre 2:</label><input type="number" name="Nombre 2:" id="nbr2"></li>
+            <li>
+                <button type="button" id="add">Additionne</button>
+                <button type="button" id="mul">Multiplie</button>
+                <button type="button" id="sous">Soustrait</button>
+                <button type="button" id="div">Divise</button>
+                <button type="button" id="inverse">Inverse</button>
+                <button type="button" id="Moy">Moyenne</button>
+            </li>
+
+        </ul>
+        <p></p>
+    </form>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>jQuery(document).ready(function () {
+            $('#add').click(function () {
+                var n1 = Number($("#nbr1").val());
+                var n2 = Number($("#nbr2").val());
+                var res =n1+n2;
+                $("p").html("Résultat : " + res)
+
+            })
+            $('#mul').click(function () {
+                var n1 = Number($("#nbr1").val());
+                var n2 = Number($("#nbr2").val());
+                var res =n1*n2;
+                $("p").html("Résultat : " + res)
+
+            })
+            $('#div').click(function () {
+                var n1 = Number($("#nbr1").val());
+                var n2 = Number($("#nbr2").val());
+                var res =n1/n2;
+                $("p").html("Résultat : " + res)
+
+            })
+            $('#sous').click(function () {
+                var n1 = Number($("#nbr1").val());
+                var n2 = Number($("#nbr2").val());
+                var res =n1-n2;
+                $("p").html("Résultat : " + res)
+
+            })
+            $('#add').click(function () {
+                var n1 = Number($("#nbr1").val());
+                var n2 = Number($("#nbr2").val());
+                var res =n1+n2;
+                $("p").html("Résultat : " + res)
+
+            })
+            $('#inverse').click(function () {
+                var n1 = Number($("#nbr1").val());
+                var n2 = Number($("#nbr2").val());
+                $('#nbr1').val(n2);
+                $('#nbr2').val(n1);
+                
+                
+            })
+            $('#Moy').click(function () {
+                var n1 = Number($("#nbr1").val());
+                var n2 = Number($("#nbr2").val());
+                var res = (n1+n2)/2
+                $("p").html("Résultat : " + res)
+                
+                
+
+            })
+
+
+        })
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

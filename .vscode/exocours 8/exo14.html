@@ -1,0 +1,68 @@
+<!Doctype html>
+<html lang="fr">
+
+<head>
+    <title>minandmax</title>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <form>
+        <ul> DATE NUMEROS 1:
+            <li class="j1"><label for="j1">
+                    jours: </label>
+                <input type="number" id="j1">
+            </li>
+            <li class="m1"><label for="m1">mois:</label><input type="number" id="m1">
+
+            </li>
+            <li class="a1"> <label for="a1">années:</label><input type="number" id="a1">
+
+            </li>
+        </ul>
+        <ul> DATE NUMEROS 2:
+            <li class="j2"><label for="j2">
+                    jours: </label>
+                <input type="number" id="j2">
+            </li>
+            <li class="m2"><label for="m2">mois:</label><input type="number" id="m2">
+
+            </li>
+            <li class="a2"> <label for="a2">années:</label><input type="number" id="a2">
+
+            </li>
+            <li> <button type="button" name='valide'>Je valide</button>
+
+            </li>
+        </ul>
+    </form>
+    <script src="../../js/jquery-3.6.0.min.js">
+    </script>
+    <script>
+        jQuery(document).ready(function () {
+            $("button").click(function () {
+                var j1 = $("#j1").val();
+                var m1 = $("#m1").val();
+                var a1 = $("#a1").val()
+                var j2 = $("#j2").val();
+                var m2 = $("#m2").val();
+                var a2 = $("#a2").val()
+                if (j1 == "" || m1 == "" || a1 == "" || j2 == "" || m2 == "" || a2 == "") { alert("case vide") }
+
+                if (a1 == a2 && j1 == j2 && m2 == m1) { alert("Meme date") }
+               else if(a1<a2){alert("date 1 est anterieur a date 2")}
+                else if(a1==a2 && m1<m2){alert("date 1 est anterieur a date 2")}
+                else if(a1==a2 && m1==m2 && j1<j2){alerte("date 1 est anterieur a date 2")}
+                else{alert("date 1 est posterieur à date 2")}
+           
+           
+            })
+
+        })
+    </script>
+</body>
+
+</html>

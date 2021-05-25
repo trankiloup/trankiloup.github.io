@@ -1,0 +1,50 @@
+<!Doctype html>
+<html lang="fr">
+
+<head>
+    <title>minandmax</title>
+    <style>
+.red{color:red;font-size: x-large;}
+    </style>
+
+</head>
+
+<body>
+    <form>
+        <ul>
+            <li class="br1"><label for="nbr1">
+                    nombre 1: </label>
+                <input type="number" id="nbr1">
+            </li>
+            <li class="br2"><label for="nbr2">nombre 2:</label><input type="number" id="nbr2">
+
+            </li>
+            <li class="br3"> <label for="nbr3">nombre 3:</label><input type="number" id="nbr3">
+
+            </li>
+            <li> <button type="button" name='valide'>Je valide</button>
+
+            </li>
+        </ul>
+    </form>
+    <script src="../../js/jquery-3.6.0.min.js">
+    </script>
+    <script>
+        jQuery(document).ready(function () {
+            $("button").click(function () {
+                var nbr1 = $("#nbr1").val();
+                var nbr2 = $("#nbr2").val();
+                var nbr3 = $("#nbr3").val()
+
+                if (nbr1 == "" || nbr2 == "" || nbr3 == "") { alert("case vide") }
+                var res=(Math.max(nbr1,nbr2,nbr3));
+                if(res==nbr1){$(".br1, #nbr1").addClass("red")}
+                if(res==nbr2){$(".br2, #nbr2").addClass("red")}
+                if(res==nbr3){$(".br3, #nbr3").addClass("red")}
+            })
+
+        })
+    </script>
+</body>
+
+</html>
